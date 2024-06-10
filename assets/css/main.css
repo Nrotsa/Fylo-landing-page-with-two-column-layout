@@ -1,0 +1,489 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.125rem;
+}
+
+body {
+  color: hsl(243, 87%, 12%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-width: 100vw;
+  width: 100%;
+  min-height: 100vh;
+  font-weight: 400;
+  font-family: "Open Sans";
+  overflow-x: hidden;
+}
+body main {
+  max-width: 100vw;
+  width: 100%;
+  position: relative;
+}
+body header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1rem 3rem;
+}
+body header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+@media (max-width: 900px) {
+  body header {
+    padding: 1rem;
+  }
+  body header div {
+    gap: 1rem;
+  }
+  body header div p {
+    font-size: 0.9rem;
+  }
+  body header img {
+    width: 30%;
+  }
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 0 3rem;
+}
+section div {
+  width: 50%;
+}
+section div h2 {
+  font-weight: 700;
+  font-family: "Raleway";
+  max-width: 85%;
+  font-size: 2rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+section div p {
+  max-width: 85%;
+  font-size: 1rem;
+}
+section div div {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+section div div .error-msg,
+section div div .error-msg-two {
+  display: none;
+}
+section div div .error-msg.active,
+section div div .error-msg-two.active {
+  color: rgb(235, 12, 12);
+  font-size: 0.8rem;
+  display: flex;
+}
+section div div .input-div {
+  margin-top: 0;
+}
+section div div input {
+  padding: 0.4rem;
+  max-width: 20rem;
+  width: 100%;
+  outline: none;
+}
+section div div button {
+  background-color: hsl(224, 93%, 58%);
+  color: hsl(240, 75%, 98%);
+  border: none;
+  padding: 0 3rem;
+  height: 42px;
+  font-weight: 700;
+  font-family: "Raleway";
+  font-size: 0.8rem;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+section div div button:hover {
+  background-color: rgba(48, 101, 248, 0.8);
+  cursor: pointer;
+}
+section img {
+  width: 50%;
+}
+@media (max-width: 900px) {
+  section {
+    flex-direction: column;
+    padding: 1rem;
+    max-width: 30rem;
+    margin: 1rem auto;
+    width: 100%;
+  }
+  section div {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 30rem;
+    width: 100%;
+  }
+  section div h2 {
+    margin: 1rem auto;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    max-width: 30rem;
+    width: 100%;
+  }
+  section div p {
+    width: 100%;
+    font-size: 0.8rem;
+    margin: 0 auto;
+  }
+  section img {
+    order: 1;
+    width: 100%;
+  }
+  section div {
+    order: 2;
+  }
+  section .input-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  section .input-box button {
+    order: 2;
+    max-width: 20rem;
+    width: 100%;
+  }
+  section .input-box .input-div {
+    order: 1;
+  }
+}
+
+.second-section div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.second-section div .link-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.second-section div .link-box a {
+  color: hsl(170, 45%, 43%);
+  transition: all 0.3s;
+}
+.second-section div .link-box a:hover {
+  color: rgba(60, 159, 143, 0.6);
+  cursor: pointer;
+}
+.second-section div .quote-box {
+  max-width: 20rem;
+  gap: 0rem;
+  width: 100%;
+  padding-left: 2rem;
+}
+.second-section div .quote-box p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+.second-section div .quote-box img {
+  width: 40px;
+  border-radius: 50%;
+}
+.second-section div .quote-box .photo-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.second-section div .quote-box .photo-div .name-div {
+  flex-direction: column;
+  gap: 0rem;
+}
+.second-section div .quote-box .photo-div .name-div .name {
+  font-weight: 700;
+  font-family: "Raleway";
+}
+.second-section div .quote-box .quotes {
+  width: 20px;
+}
+@media (max-width: 900px) {
+  .second-section div {
+    align-items: center;
+    margin: 1rem auto;
+  }
+  .second-section div .link-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .second-section div .quote-box {
+    align-items: flex-start;
+  }
+  .second-section div .quote-box p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    order: 2;
+  }
+  .second-section div .quote-box img {
+    width: 40px;
+    border-radius: 50%;
+  }
+  .second-section div .quote-box .photo-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+  .second-section div .quote-box .photo-div .name-div {
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .second-section div .quote-box .photo-div .name-div .name {
+    font-weight: 700;
+    font-family: "Raleway";
+  }
+  .second-section div .quote-box .quotes {
+    width: 20px;
+    order: 1;
+  }
+}
+
+.third-section {
+  background-color: hsl(238, 22%, 44%);
+  padding: 4rem 3rem;
+  color: hsl(240, 75%, 98%);
+  margin: 0;
+}
+.third-section p {
+  max-width: 32rem;
+}
+.third-section .error-msg {
+  display: none;
+}
+.third-section .error-msg.active {
+  color: rgb(235, 12, 12);
+  font-size: 0.5rem;
+  display: flex;
+}
+.third-section .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.third-section .right .error-msg,
+.third-section .right .error-msg-two {
+  display: none;
+}
+.third-section .right .error-msg.active,
+.third-section .right .error-msg-two.active {
+  color: rgb(235, 12, 12);
+  font-size: 0.8rem;
+  display: flex;
+}
+.third-section .right .input-div {
+  margin-top: 0;
+}
+.third-section .right input {
+  padding: 0.4rem;
+  max-width: 20rem;
+  width: 100%;
+  outline: none;
+}
+.third-section .right button {
+  background-color: hsl(224, 93%, 58%);
+  color: hsl(240, 75%, 98%);
+  border: none;
+  padding: 0 3rem;
+  height: 42px;
+  font-weight: 700;
+  font-family: "Raleway";
+  font-size: 0.8rem;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.third-section .right button:hover {
+  background-color: rgba(48, 101, 248, 0.8);
+  cursor: pointer;
+}
+.third-section .right button {
+  padding: 0.8rem 2rem;
+}
+@media (max-width: 900px) {
+  .third-section {
+    border: 1px solid black;
+    align-items: center;
+    max-width: 100%;
+  }
+  .third-section .right {
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .third-section .right button {
+    order: 2;
+    max-width: 20rem;
+    width: 100%;
+    height: 100%;
+    font-size: 0.7rem;
+  }
+}
+
+footer {
+  background-color: hsl(243, 87%, 12%);
+  position: relative;
+  color: hsl(240, 75%, 98%);
+  padding: 4rem 3rem;
+}
+footer svg path {
+  fill: hsl(240, 75%, 98%);
+}
+footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer div .footer-left,
+footer div .mid-grid,
+footer div .right-bot {
+  width: 33%;
+}
+footer div .footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+footer div .footer-left div {
+  display: flex;
+  gap: 0.5rem;
+}
+footer div .footer-left div p {
+  font-size: 0.9rem;
+}
+footer div .mid-grid {
+  max-width: 33%;
+  justify-content: center;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 100px 100px;
+  -moz-column-gap: 8rem;
+       column-gap: 8rem;
+}
+footer div .mid-grid p {
+  font-size: 0.8rem;
+  transition: all 0.3s;
+}
+footer div .mid-grid p:hover {
+  color: hsl(224, 93%, 58%);
+  cursor: pointer;
+}
+footer div .right-bot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+}
+footer div .right-bot svg {
+  transition: all 0.3s;
+}
+footer div .right-bot svg:hover path {
+  fill: hsl(224, 93%, 58%);
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  footer div {
+    flex-direction: column;
+  }
+  footer div .mid-grid {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  footer div .right-bot {
+    align-items: center;
+    width: 100%;
+  }
+  footer div .footer-left {
+    width: 100%;
+  }
+  footer div .footer-left div {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+footer .author {
+  position: absolute;
+  bottom: 5px;
+  margin-top: 2rem;
+  right: 50%;
+  transform: translateX(50%);
+}
+footer .author p,
+footer .author a {
+  font-size: 0.7rem;
+}
+
+.error-msg {
+  display: none;
+}
+
+.error-msg.active {
+  color: rgb(235, 12, 12);
+  font-size: 0.5rem;
+  display: flex;
+}
+
+.input-div {
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+}/*# sourceMappingURL=main.css.map */
